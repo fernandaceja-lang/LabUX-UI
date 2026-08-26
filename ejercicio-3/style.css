@@ -1,0 +1,118 @@
+/*INDICE DE ESTILOS
+0. Generales / colores
+1. Tipografías
+2. Header / Cabecera
+3. Enlaces / Botones
+4. Areas destacadas
+*/
+
+/*0. Generales / colores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #1d56dc;
+  --color-acento: #19A8E1;
+  --color-tercer: #E1B619;
+  --color-texto: #303134; 
+}
+
+/* Tipografías */
+.titulo-principal{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 28px;
+}
+
+.titulo-secundario{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-acento);
+    font-size: 22px;
+}
+
+.parrafo{
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texto);
+    font-size: 18px;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+/* Header / Cabecera*/
+#cabecera-principal{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    /* Borde: grosor tipo color; */
+    border-bottom: 3px solid var(--color-principal);
+}
+
+/* 3. Enlaces / Botones */
+
+.boton-principal{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 20px;
+    /* Quito la línea inferior*/
+    text-decoration: none;
+    /*Asigno cuerpo por medio del relleno*/
+    padding: 8px 15px 8px 15px;
+    /*animación del paso del mouse*/
+    transition: all linear 0.3s;
+}
+
+/*cambio de color al pasar el mouse encima del botón*/
+.boton-principal:hover{
+    color: white;
+    background-color: var(--color-principal);
+    /*Redondeo los bordes*/
+    border-radius: 5px;
+}
+
+/*4. Areas destacadas*/
+.elements-row{
+    display: flex;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 600px){
+    /* 2.Header / Cabecera */
+    #cabecera-principal{
+    flex-direction: column;
+    padding: 20px 0 20px 0; 
+    }
+
+    /* 3. Enlaces / Botones */
+    nav [role=navigation]{
+        width: 100%;
+    }
+    .boton-principal{
+        /* Se comporte como un bloque */
+        display: block;
+        /* ancho */ 
+        width: 96%;
+        /* margen */
+        margin: 5px 2% 5px 2%;
+        /* alineación al centro */
+        text-align: center;
+        /* borde inferior */
+        border-bottom: 1px solid var(--color-principal);
+    }
+
+}
