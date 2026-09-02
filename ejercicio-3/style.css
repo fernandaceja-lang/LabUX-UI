@@ -4,6 +4,7 @@
 2. Header / Cabecera
 3. Enlaces / Botones
 4. Areas destacadas
+5. Area Experiencias (Video)
 */
 
 /*0. Generales / colores*/
@@ -20,13 +21,18 @@
   --color-texto: #303134; 
 }
 
+img{
+    width: 100%;
+}
+
 /* Tipografías */
 .titulo-principal{
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--color-principal);
-    font-size: 28px;
+    font-size: 35px;
+    text-align: center;
 }
 
 .titulo-secundario{
@@ -35,6 +41,15 @@
     font-style: normal;
     color: var(--color-acento);
     font-size: 22px;
+}
+
+.titulo-experiencias{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+    text-align: center;
 }
 
 .parrafo{
@@ -76,6 +91,24 @@
     transition: all linear 0.3s;
 }
 
+.boton-secundario{
+    font-family: "DM Serif Display", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #0681b1;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 6px 10px 6px 0;
+    transition: all linear 0.5s;
+}
+
+.boton-secundario:hover{
+    color: white;
+    background-color: #19A8E1;
+    border-radius: 5px;
+    padding: 6px 10px 6px 10px;
+}
+
 /*cambio de color al pasar el mouse encima del botón*/
 .boton-principal:hover{
     color: white;
@@ -87,11 +120,43 @@
 /*4. Areas destacadas*/
 .elements-row{
     display: flex;
+    justify-content: space-around;
+
 }
 
+#area-destacada{
+    padding: 100px 0;
+}
 
+.articulo-index{
+    /*relleno: top right bottom left*/
+    padding: 20px;
+}
+
+.articulo-index *{
+    
+     /*relleno: top right bottom left*/
+    margin: 0 0 10px 0;
+}
+
+/*5. Area Experiencias (Video)*/
+#area-experiencias{
+    padding: 100px;
+    background: url(Assets/EWRWZLV7FZEM7C24TIEPFBJCP4\ copy\ 2.png) center center no-repeat rgb(0,0,0,0);
+    background-size: cover;
+}
+
+#area-experiencias video{
+    margin: 30px 5%;
+}
 /* Responsive */
 @media only screen and (max-width: 600px){
+
+    .elements-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* 2.Header / Cabecera */
     #cabecera-principal{
     flex-direction: column;
