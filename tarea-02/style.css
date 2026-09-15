@@ -1,0 +1,320 @@
+/*INDICE DE ESTILOS
+0. Generales / colores
+1. Tipografías
+2. Header / Cabecera
+3. Carrusel
+4. Enlaces / Botones
+5. Areas destacadas
+6. Area Experiencias (Video)
+7. Destacados semana
+8. Mapa CDMX
+7. Responsive
+*/
+
+
+/*0. Generales / colores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #C83B3B;
+  --color-secundario: #4F7D58;
+  --color-terciario: #E5B83F;
+  --color-texto: #292929;
+}
+
+img{
+    width: 100%;
+}
+
+/*1. Tipografías */
+.titulo-principal{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 40px;
+    text-align: center;
+}
+
+.titulo-secundario{
+    font-family: "Georgia, serif", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 32px;
+}
+
+
+.titulo-experiencias{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.parrafo{
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texto);
+    font-size: 20px;
+    margin: 0 0 18px 0;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+/*2. Header / Cabecera*/
+#cabecera-principal{
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    /* Borde: grosor tipo color; */
+    border-bottom: 3px solid var(--color-principal);
+    background-color: #f8f1df;
+}
+
+/* Título principal */
+
+#area-destacada .titulo-principal {
+    color: #c93636;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+/* Carrusel */
+
+#testimonios-carrusel {
+    max-width: 1900px;
+    margin: auto;
+}
+
+.actividad {
+    position: relative;
+    background-color: #f5f0e6;
+}
+
+.imagen-actividad {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.texto-actividad {
+    position: relative;
+    background-color: #f5f0e6;
+    padding: 30px 45px 55px;
+    margin-top: -30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.texto-actividad .boton-secundario:hover {
+    text-decoration: underline;
+}
+
+#testimonios-carrusel .carousel-control-prev,
+#testimonios-carrusel .carousel-control-next {
+    width: 55px;
+    height: 55px;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: var(--color-secundario);
+    border-radius: 50%;
+    opacity: 1;
+    margin: 0 20px;
+}
+
+#testimonios-carrusel .carousel-control-prev:hover,
+#testimonios-carrusel .carousel-control-next:hover {
+    background-color: rgb(164, 164, 164);
+}
+
+/* 4. Enlaces / Botones */
+
+.boton-principal{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 20px;
+    /* Quito la línea inferior*/
+    text-decoration: none;
+    /*Asigno cuerpo por medio del relleno*/
+    padding: 8px 15px 8px 15px;
+    /*animación del paso del mouse*/
+    transition: all linear 0.3s;
+}
+
+.boton-secundario{
+    font-family: "DM Serif Display", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--color-secundario);
+    font-size: 22px;
+    text-decoration: none;
+    padding: 6px 10px 6px 0;
+    transition: all linear 0.5s;
+}
+
+.boton-secundario:hover{
+    color: white;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    padding: 6px 10px 6px 10px;
+}
+
+/*cambio de color al pasar el mouse encima del botón*/
+.boton-principal:hover{
+    color: white;
+    background-color: var(--color-principal);
+    /*Redondeo los bordes*/
+    border-radius: 5px;
+}
+
+/*5. Areas destacadas*/
+.elements-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+#area-destacada{
+    padding: 100px 0;
+}
+
+.articulo-index{
+    /*relleno: top right bottom left*/
+    padding: 20px;
+}
+
+.articulo-index *{
+    
+     /*relleno: top right bottom left*/
+    margin: 0 0 10px 0;
+}
+
+/*6. Area Experiencias (Video)*/
+
+#area-experiencias{
+    padding: 100px;
+    background: url(assets/version2.jpg) center center no-repeat rgb(0,0,0,0);
+    background-size: cover;
+}
+
+#area-experiencias video{
+    margin: 30px 5%;
+}
+
+/* 7. Destacados semana */
+
+#destacado-semana{
+    padding: 100px 20px 100px 20px;
+}
+
+/* 8. Destacados semana */
+#mapa-cdmx{
+    padding: 100px ;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    padding: 100px;
+    color: var(--color-secundario);
+    padding: 0;
+}
+
+.footer-brand{
+    padding:40px;
+}
+
+.footer-brand img{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: 30px 25%;
+}
+
+.lista-final{
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: var(--color-principal);
+    background-size: cover;
+}
+
+.lista-final .titulo-secundario{
+    font-family: "Georgia, serif", serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+}
+
+ul{
+    display: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+/*7. Responsive */
+@media only screen and (max-width: 600px){
+
+    .elements-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 2.Header / Cabecera */
+    #cabecera-principal{
+    flex-direction: column;
+    padding: 20px 0 20px 0; 
+    }
+
+    /* 3. Enlaces / Botones */
+    nav [role=navigation]{
+        width: 100%;
+    }
+    .boton-principal{
+        /* Se comporte como un bloque */
+        display: block;
+        /* ancho */ 
+        width: 96%;
+        /* margen */
+        margin: 5px 2% 5px 2%;
+        /* alineación al centro */
+        text-align: center;
+        /* borde inferior */
+        border-bottom: 1px solid var(--color-principal);
+    }
+
+}
+
+
