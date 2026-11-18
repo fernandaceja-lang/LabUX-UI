@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subway México | Come fresco. Vive mejor.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Fira+Sans+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <a class="header__logo" href="#inicio" aria-label="Subway México">
+      <img src="imagenes/logo.webp" alt="Subway" width="247" height="48">
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__link" href="#inicio">Inicio</a>
+      <a class="nav__link" href="#ingredientes">Ingredientes</a>
+      <a class="nav__link" href="#menu">Menú</a>
+      <a class="nav__link" href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="btn" href="#menu">Ordena ahora</a>
+  </header>
+
+  <main>
+
+    <!-- ============ INICIO ============ -->
+    <section class="hero" id="inicio">
+      <img class="hero__img" src="imagenes/Sub5.png" alt="Sub de Subway con ingredientes frescos">
+
+      <div class="hero__content">
+        <h1 class="hero__title">Come fresco.<br>Vive mejor.</h1>
+        <p class="hero__text">En Subway, armamos sándwiches con ingredientes frescos y a tu manera.</p>
+        <a class="btn btn--arrow" href="#menu">Explora el menú <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <!-- ============ INGREDIENTES ============ -->
+    <section class="ingredients" id="ingredientes">
+      <h2 class="ingredients__title">
+        Ingredientes frescos<br>
+        <span>para un mejor sabor</span>
+      </h2>
+      <p class="ingredients__text">Armamos sándwiches con ingredientes frescos y a tu manera.</p>
+
+      <div class="ingredients__viewport">
+        <ul class="ingredients__track">
+          <li class="ing-card ing-card--a"><img src="imagenes/ing1.png" alt="Jitomate"></li>
+          <li class="ing-card ing-card--b"><img src="imagenes/ing2.png" alt="Queso"></li>
+          <li class="ing-card ing-card--c"><img src="imagenes/ing3.png" alt="Aceitunas"></li>
+          <li class="ing-card ing-card--d"><img src="imagenes/ing4.png" alt="Lechuga"></li>
+          <li class="ing-card ing-card--d"><img src="imagenes/ing5.png" alt="Pimiento y jitomate"></li>
+          <li class="ing-card ing-card--d"><img src="imagenes/ing6.png" alt="Jalapeño y champiñones"></li>
+        </ul>
+      </div>
+
+      <img class="ingredients__floating" src="imagenes/ingred.png" alt="" aria-hidden="true">
+    </section>
+
+    <!-- ============ MENÚ ============ -->
+    <section class="menu" id="menu">
+      <h2 class="menu__title">Nuestro menú</h2>
+      <p class="menu__text">Elige tu sub preferido y personalízalo con los ingredientes que más te gustan.</p>
+
+      <div class="menu__carousel" aria-roledescription="carrusel" aria-label="Menú">
+        <button class="menu__arrow menu__arrow--prev" type="button" aria-label="Anterior">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+
+        <div class="menu__viewport">
+          <ul class="menu__track">
+          <li class="menu-card menu-card--clasicos">
+            <span class="menu-card__blob menu-card__blob--1"></span>
+            <span class="menu-card__blob menu-card__blob--2"></span>
+            <img class="menu-card__img" src="imagenes/Sub1.png" alt="Sub clásico">
+            <h3 class="menu-card__title">Clásicos</h3>
+            <p class="menu-card__text">Tus favoritos siempre frescos</p>
+            <a class="btn btn--arrow menu-card__btn" href="#contacto">Ordena ahora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="menu-card menu-card--premium">
+            <span class="menu-card__blob menu-card__blob--1"></span>
+            <span class="menu-card__blob menu-card__blob--2"></span>
+            <img class="menu-card__img" src="imagenes/Sub2.png" alt="Sub premium">
+            <h3 class="menu-card__title">Premium</h3>
+            <p class="menu-card__text">Una experiencia única</p>
+            <a class="btn btn--arrow menu-card__btn" href="#contacto">Ordena ahora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="menu-card menu-card--especiales">
+            <span class="menu-card__blob menu-card__blob--1"></span>
+            <span class="menu-card__blob menu-card__blob--2"></span>
+            <img class="menu-card__img" src="imagenes/Sub3.png" alt="Sub especial">
+            <h3 class="menu-card__title">Especiales</h3>
+            <p class="menu-card__text">Sabores que te sorprenden</p>
+            <a class="btn btn--arrow menu-card__btn" href="#contacto">Ordena ahora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="menu-card menu-card--vegetarianos">
+            <span class="menu-card__blob menu-card__blob--1"></span>
+            <span class="menu-card__blob menu-card__blob--2"></span>
+            <img class="menu-card__img" src="imagenes/Sub4.png" alt="Sub vegetariano">
+            <h3 class="menu-card__title">Vegetarianos</h3>
+            <p class="menu-card__text">Frescura en cada bocado</p>
+            <a class="btn btn--arrow menu-card__btn menu-card__btn--narrow" href="#contacto">Ordena ahora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="menu-card menu-card--nuevos">
+            <span class="menu-card__blob menu-card__blob--1"></span>
+            <span class="menu-card__blob menu-card__blob--2"></span>
+            <img class="menu-card__img" src="imagenes/Sub5.png" alt="Sub nuevo">
+            <h3 class="menu-card__title">Nuevos</h3>
+            <p class="menu-card__text">Descubre sabores extraordinarios</p>
+            <a class="btn btn--arrow menu-card__btn menu-card__btn--narrow" href="#contacto">Ordena ahora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="menu-card menu-card--saludables">
+            <span class="menu-card__blob menu-card__blob--1"></span>
+            <span class="menu-card__blob menu-card__blob--2"></span>
+            <img class="menu-card__img" src="imagenes/Sub1.png" alt="Sub saludable">
+            <h3 class="menu-card__title">Saludables</h3>
+            <p class="menu-card__text">Disfruta y cuida tu salud</p>
+            <a class="btn btn--arrow menu-card__btn" href="#contacto">Ordena ahora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          </ul>
+        </div>
+
+        <button class="menu__arrow menu__arrow--next" type="button" aria-label="Siguiente">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ CONTÁCTANOS ============ -->
+    <section class="contact" id="contacto">
+      <div class="contact__left">
+        <h2 class="contact__title">Contáctanos</h2>
+        <p class="contact__lead">¿Tienes alguna duda?, escribenos</p>
+        <a class="btn btn--arrow" href="#">Envianos un mensaje <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <span class="contact__divider" aria-hidden="true"></span>
+
+      <div class="contact__right">
+        <div class="contact__row">
+          <i class="fas fa-map-marker-alt contact__icon" aria-hidden="true"></i>
+          <p class="contact__info contact__info--store">Encuentranos en tus tiendas mas cercanas</p>
+          <a class="btn btn--arrow" href="#">Ver mapa <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="contact__row">
+          <i class="fas fa-phone contact__icon" aria-hidden="true"></i>
+          <p class="contact__info contact__info--tel">602 348 9460</p>
+          <a class="btn btn--arrow" href="tel:+526023489460">Llama ahora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <a class="footer__logo" href="#inicio" aria-label="Subway México">
+      <img src="imagenes/logo.webp" alt="Subway">
+    </a>
+
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__desc">Sándwiches hechos al momento con ingredientes frescos. Arma tu sub como más te guste.</p>
+
+        <form class="newsletter" action="#" method="post">
+          <p class="newsletter__title">Recibe promociones en tu correo</p>
+          <div class="field">
+            <label class="field__label" for="correo">Correo electrónico</label>
+            <input class="field__input" id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+          <button class="btn newsletter__btn" type="submit">Ordena ahora</button>
+        </form>
+      </div>
+
+      <nav class="footer__col footer__col--explora" aria-label="Explora">
+        <h3 class="footer__heading">Explora</h3>
+        <a class="footer__link" href="#inicio">Inicio</a>
+        <a class="footer__link" href="#ingredientes">Ingredientes</a>
+        <a class="footer__link" href="#menu">Menú</a>
+        <a class="footer__link" href="#contacto">Contacto</a>
+      </nav>
+
+      <nav class="footer__col footer__col--ayuda" aria-label="Ayuda">
+        <h3 class="footer__heading">Ayuda</h3>
+        <a class="footer__link" href="#">Preguntas frecuentes</a>
+        <a class="footer__link" href="#">Sucursales</a>
+        <a class="footer__link" href="#">Términos y condiciones</a>
+        <a class="footer__link" href="#">Aviso de privacidad</a>
+      </nav>
+
+      <div class="footer__col footer__col--contacto">
+        <h3 class="footer__heading">Contacto</h3>
+
+        <p class="footer__data">
+          <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, México
+        </p>
+        <p class="footer__data">
+          <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          800 000 0000
+        </p>
+        <p class="footer__data">
+          <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          hola@ejemplo.com
+        </p>
+      </div>
+    </div>
+
+    <p class="footer__copy">© 2026 Subway México. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
